@@ -13,9 +13,9 @@ int main() {
     const std::string db_port   = "5432";
     const std::string db_name   = "chat";
     const std::string db_user   = "chat";
-    const std::string db_pass   = "password123";
+    const std::string db_pass   = "password";
 
-    const std::string secret    = "supersecretkey123";
+    const std::string secret    = "supersecretkey";
     const std::string address   = "0.0.0.0";
     const int         serverPort = 8080;
 
