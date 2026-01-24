@@ -68,7 +68,7 @@ target_link_libraries(server
         chatserver
         OpenSSL::SSL
         OpenSSL::Crypto
-        /usr/local/lib/libpqxx.a
+        /usr/lib/aarch64-linux-gnu/libpqxx.a
         pq
         pthread
         dl
