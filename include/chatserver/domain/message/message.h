@@ -23,6 +23,8 @@ public:
         MessageText text,
         Timestamp createdAt
     );
+
+    Message(UserId senderId, MessageText text, Timestamp createdAt);
     // Основной конструктор сущности Message.
     // Используется при создании нового сообщения или загрузке из БД.
     // Все параметры передаются по значению, затем перемещаются в поля —

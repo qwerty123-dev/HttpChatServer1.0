@@ -21,6 +21,16 @@ Message::Message(
 //   • createdAt_ копируется (int64_t внутри, копирование дешёвое)
 // Такой подход упрощает вызов конструктора и использует move semantics там,
 // где это даёт реальную выгоду.
+Message::Message(
+    UserId senderId,
+    MessageText text,
+    Timestamp createdAt
+)
+    : id_(0)
+    , senderId_(senderId)
+    , text_(std::move(text))
+    , createdAt_(createdAt) {}
+
 const MessageId& Message::id() const {
     return id_;
 }

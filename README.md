@@ -1,14 +1,12 @@
-1. Убираем generate() из message.h
-2. login_user_handler.cpp добавляем исключения
-3. openssl_message_encryptor.h заменить стринг на 
+1. login_user_handler.cpp добавляем исключения
+2. openssl_message_encryptor.h заменить стринг на 
 secure buffer (std::vector<uint8_t> + очистка)
-4. openssl_message_encryptor.cpp - много криптографических ошибок
-5. openssl_password_encryptor.h заменить стринг на вектор и 
+3. openssl_message_encryptor.cpp - много криптографических ошибок
+4. openssl_password_encryptor.h заменить стринг на вектор и 
 добавить количество итераций (минимум 300k–600k)
-6. переписать репозитории (асинхронность + проверка транзакций)
-7. postgress_message_repository.h/.cpp переписать в идеальный продакшен-вариант
-8. postgress_user_repository.h/.cpp переписать в идеальный продакшен-вариант
-9. Синхронный многопоточный сервер
+5. postgress_message_repository.h/.cpp переписать в идеальный продакшен-вариант
+6. postgress_user_repository.h/.cpp переписать в идеальный продакшен-вариант
+7. Синхронный многопоточный сервер
 
 Чистая пересборка:
 rm -rf build

@@ -2,7 +2,7 @@
 #include "chatserver/infrastructure/http/resources/message_resource.h"
 #include "chatserver/infrastructure/http/http_response.h"
 
-#include </home/qwerty/Documents/HttpChatServer1.0/include/chatserver/nlohmann/json.hpp>
+#include "chatserver/nlohmann/json.hpp"
 #include <iostream>
 
 using json = nlohmann::json;

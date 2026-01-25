@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- Таблица сообщений
 CREATE TABLE IF NOT EXISTS messages (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,  -- AUTO INCREMENT для идентификатора
     sender_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     text TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

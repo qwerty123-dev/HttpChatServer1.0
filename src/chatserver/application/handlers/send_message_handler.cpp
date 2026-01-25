@@ -53,7 +53,7 @@ std::int64_t SendMessageHandler::handle(const SendMessageCommand& command) {
 
         // Создаём доменную сущность Message.
         domain::message::Message message(
-            domain::MessageId::generate(),  // Генерируем уникальный ID сообщения.
+            //domain::MessageId::generate(),  // Генерируем уникальный ID сообщения.
             domain::UserId(command.sender_id), // Превращаем sender_id в доменный UserId.
             domain::MessageText(encrypted), // Оборачиваем зашифрованный текст в Value Object.
             domain::Timestamp::now()  // Фиксируем время создания.
